@@ -10,3 +10,12 @@
 	clear: both;
 	display: table;
 }
+
+.d-flex {
+	display: flex;
+}
+
+.d-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
