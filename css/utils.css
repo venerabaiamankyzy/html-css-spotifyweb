@@ -1,4 +1,9 @@
 /* Utils */
+:root{
+	--p:#6f7277;
+	--white: #fefefe;
+	
+}
 
 .container {
 	max-width: 1200px;
@@ -11,6 +16,7 @@
 	display: table;
 }
 
+
 .d-flex {
 	display: flex;
 }
@@ -18,4 +24,40 @@
 .d-wrap {
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.justify-content-end {
+	justify-content: flex-end;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.gap20 {
+	gap: 20px;
+}
+
+.my-10 {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.mt-lg {
+	margin-top: 30px;
+}
+
+.py-10 {
+	padding-right: 10px;
+	padding-left: 10px;
 }

@@ -1,38 +1,176 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 #top-content {
   height: calc(100vh - 80px);
   background-color:chocolate;
   border: 1px solid black;
 }
+
+/* SIDEBAR */
+
 .sidebar {
   height: calc(100vh - 80px);
   width: 260px;
  
   background-color: #000000;
-  border: 1px solid white;
+  color: white;
   overflow-x: hidden;
+}
+
+.sidebar .logo img {
+  height: 40px;
+  margin: 20px 10px 10px 10px;
+ }
+
+ .sidebar-nav {
+  margin: 20px 10px;
+ }
+
+ .sidebar-nav img {
+  height: 25px;
+  opacity: 0.5;
+  margin: 3px 5px;
+  vertical-align: middle;
+ }
+ 
+ .sidebar-nav a {
+  font-size: .9rem;
+  opacity: 0.5;
+  vertical-align: middle;
+ }
+ 
+ .sidebar .opacity100 {
+  opacity: 1.0;
+ }
+
+ .sidebar-playlist {
+  margin-left: 20px;
+ }
+
+ .sidebar-playlist h2 {
+  font-size: .8rem;
+  font-weight: bold;
+  text-transform: uppercase;  
+ }
+
+  .sidebar-playlist ul {
+  height: 200px;
+  overflow: auto;
+ }
+
+ .sidebar-playlist ul li {
+  opacity: 0.5;
+  margin: 10px 0; 
+  font-size: .9rem;  
+ } 
+
+.sidebar-playlist a.playlist{
+  font-size: .9rem;
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+  opacity: 0.5;
+  }
+
+ .sidebar-playlist i {
+  margin-right: 5px; 
+  vertical-align: middle;
+ } 
+
+ /* SIDEBAR FOOTER */
+.sidebar-footer {
+  margin-left: 20px;
+  margin-top: auto;
+}
+
+.sidebar-footer a:first-child {
+ border-bottom: 1px solid white;
+ width: 80%;
+ padding: 0 0 10px 0 ;
+ opacity: 0.5; 
+ font-size: .8rem;
+}
+
+.sidebar-footer a:nth-child(2) {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 10px;
+  vertical-align: middle;
+}
+
+.sidebar-footer img {
+  height: 15px;
+  margin-right: 5px; 
+  vertical-align: middle;
+ }
+
+ .sidebar-footer a:nth-child(2) img{
+  height: 20px;
+  vertical-align: middle;
+  }
+
+
+/* HEADER */
+
+.header {
+  height: 90px;
+  width: calc(100% - 250px);
+  background-color: #080b12;
+  position: fixed;
+  z-index: 1;
+}
+
+.header .btn {
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 22px;
+  padding: 10px 40px;
+  text-decoration: none;
+  font-size: .8rem;
+  text-transform: uppercase;
+  margin: 20px 30px;
+}
+
+.main-nav ul li a {
+  color: var(--p);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 10px;
+}
+
+/* MAIN */
+.main {
+  padding-top: 100px;
 }
 
 .main-content {
   height: calc(100vh - 80px);
   width: calc(100% - 260px);
+  overflow: auto;
+  color: var(--white);
+  
  
   background-color: #141922;
-  border: 1px solid white;
-  
 }
 
-
-.header {
-  height: 80px;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-
-  background-color:blanchedalmond;
-  border: 1px solid black;
+.recently-played div {
+  color: var(--white);
 }
 
+.main-content h2{
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 30px 20px;
+}
 
+.main-content p{
+  font-size: .8rem;
+  opacity: 0.5;
+}
+
+/* FOOTER */
 
 .footer {
   height: 80px;

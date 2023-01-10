@@ -20,3 +20,13 @@ picture,
 video {
 	max-width: 100%;
 }
+
+a {
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+
+li {
+	list-style: none;
+}
